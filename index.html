@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUGEL CAR RENTAL | Şanlıurfa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container navbar">
+            <div class="logo">TUGEL <span>RENTAL</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Anasayfa</a></li>
+                    <li><a href="#filo">Araçlar</a></li>
+                    <li><a href="#contact">İletişim</a></li>
+                </ul>
+            </nav>
+            <a href="https://www.instagram.com/muhammedtumbull?igsh=MXRreGN5eWt0NnBnZg%3D%3D&utm_source=qr" target="_blank" class="btn-insta-header">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="overlay"></div>
+        <div class="container hero-content">
+            <h1 class="animate-text">Şanlıurfa'da<br><span>Premium</span> Yolculuk</h1>
+            <p class="animate-text delay-1">Tugel Car Rental ayrıcalığıyla, konfor ve güveni bir arada yaşayın.</p>
+            
+            <div class="booking-box animate-text delay-2">
+                <div class="input-group">
+                    <label><i class="fas fa-calendar-alt"></i> Alış Tarihi</label>
+                    <input type="date" id="pickupDate">
+                </div>
+                <div class="input-group">
+                    <label><i class="fas fa-calendar-check"></i> İade Tarihi</label>
+                    <input type="date" id="dropoffDate">
+                </div>
+                <div class="input-group">
+                    <label><i class="fas fa-car"></i> Araç Sınıfı</label>
+                    <select id="carClass">
+                        <option value="Ekonomi">Ekonomi Sınıfı</option>
+                        <option value="Orta">Orta Sınıf</option>
+                        <option value="SUV">SUV (Arazi)</option>
+                        <option value="Genis">Geniş / VIP</option>
+                    </select>
+                </div>
+                <button class="btn-search" onclick="searchCar()">ARAÇ BUL & SOR</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="hizmetler">
+        <div class="container">
+            <div class="feature-box reveal">
+                <div class="icon-circle"><i class="fas fa-car-side"></i></div>
+                <h3>Geniş Araç Filosu</h3>
+                <p>Ekonomikten VIP araçlara kadar zengin seçenekler.</p>
+            </div>
+            <div class="feature-box reveal">
+                <div class="icon-circle"><i class="fas fa-shield-alt"></i></div>
+                <h3>Tam Güvence</h3>
+                <p>Tüm araçlarımızda full kasko ve sigorta mevcuttur.</p>
+            </div>
+            <div class="feature-box reveal">
+                <div class="icon-circle"><i class="fas fa-headset"></i></div>
+                <h3>7/24 Destek</h3>
+                <p>Yol yardım ve kiralama desteği bir telefon uzağınızda.</p>
+            </div>
+        </div>
+    </section>
+
+ <section class="fleet" id="filo">
+        <div class="container">
+            <h2 class="section-title reveal">Araç <span>Filomuz</span></h2>
+            <div class="car-grid">
+                
+                <div class="car-card reveal">
+                    <div class="car-img">
+                        <img src="https://images.unsplash.com/photo-1664785830053-251258f259f3?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBldWdlb3R8ZW58MHx8MHx8fDA%3D" alt="Peugeot 301">
+                        <div class="car-badge">Ekonomik</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>Peugeot 301 ve Benzeri</h3>
+                        <p class="model-year">Düşük Yakıt Tüketimi</p>
+                        <div class="specs">
+                            <span><i class="fas fa-gas-pump"></i> Dizel</span>
+                            <span><i class="fas fa-cogs"></i> Manuel</span>
+                        </div>
+                        <a href="https://wa.me/905318602363?text=Merhaba, Peugeot 301 ve benzeri ekonomik araçlar hakkında bilgi almak istiyorum." class="btn-rent">WHATSAPP İLE KİRALA</a>
+                    </div>
+                </div>
+
+                <div class="car-card reveal">
+                    <div class="car-img">
+                        <img src="https://images.unsplash.com/photo-1718629879765-6a9af494ef09?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGdvbGYlMjBjYXJ8ZW58MHx8MHx8fDA%3D" alt="Golf">
+                        <div class="car-badge">Orta Sınıf</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>VW Golf ve Benzeri</h3>
+                        <p class="model-year">Konfor ve Performans</p>
+                        <div class="specs">
+                            <span><i class="fas fa-gas-pump"></i> Benzin/Dizel</span>
+                            <span><i class="fas fa-cogs"></i> Otomatik</span>
+                        </div>
+                        <a href="https://wa.me/905318602363?text=Merhaba, Golf ve benzeri orta sınıf araçlar hakkında bilgi almak istiyorum." class="btn-rent">WHATSAPP İLE KİRALA</a>
+                    </div>
+                </div>
+
+                <div class="car-card reveal">
+                    <div class="car-img">
+                        <img src="https://images.unsplash.com/photo-1616422285623-13ff0162193c?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGF1ZGl8ZW58MHx8MHx8fDA%3D" alt="Audi Passat">
+                        <div class="car-badge">VIP / Lüks</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>Audi / Passat ve Benzeri</h3>
+                        <p class="model-year">Premium Makam Araçları</p>
+                        <div class="specs">
+                            <span><i class="fas fa-gas-pump"></i> Dizel</span>
+                            <span><i class="fas fa-cogs"></i> Otomatik</span>
+                        </div>
+                        <a href="https://wa.me/905318602363?text=Merhaba, Audi / Passat grubu lüks araçlar hakkında bilgi almak istiyorum." class="btn-rent">WHATSAPP İLE KİRALA</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-left reveal">
+                    <h2>TUGEL <span>RENTAL</span></h2>
+                    <p class="slogan">Şanlıurfa'nın güvenilir yol arkadaşı.</p>
+                    <ul class="contact-list">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i> 
+                            <span>PAŞABAĞI, ŞUTİM 3. SOKAK,<br>NO:20 HALİLİYE/ŞANLIURFA</span>
+                        </li>
+                        <li><i class="fas fa-phone-alt"></i> <a href="tel:+905318602363">0531 860 23 63</a></li>
+                        <li><i class="fas fa-envelope"></i> <span>Mtumbul005@gmail.com</span></li>
+                    </ul>
+                    <div class="social-area">
+                        <p>Bizi Takip Edin:</p>
+                        <a href="https://www.instagram.com/muhammedtumbull?igsh=MXRreGN5eWt0NnBnZg%3D%3D&utm_source=qr" target="_blank" class="insta-big-btn">
+                            <i class="fab fa-instagram"></i> @muhammedtumbull
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-right reveal">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.0000000000005!2d38.790000!3d37.160000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDA5JzM2LjAiTiAzOMKwNDcnMjQuMCJF!5e0!3m2!1str!2str!4v1600000000000!5m2!1str!2str" width="100%" height="300" style="border:0; border-radius: 15px;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>© 2024 TUGEL CAR RENTAL. Tüm Hakları Saklıdır.</p>
+                <p class="developer">Developed by Emin Küçük</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/905318602363?text=Merhaba, araç kiralamak istiyorum." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        // Scroll Animasyonu
+        window.addEventListener('scroll', reveal);
+        function reveal(){
+            var reveals = document.querySelectorAll('.reveal');
+            for(var i = 0; i < reveals.length; i++){
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+                if(revealtop < windowheight - revealpoint){
+                    reveals[i].classList.add('active');
+                }
+            }
+        }
+
+        // WhatsApp Tarih ve Sınıf Gönderme Fonksiyonu
+        function searchCar() {
+            var pickup = document.getElementById("pickupDate").value;
+            var dropoff = document.getElementById("dropoffDate").value;
+            var carClass = document.getElementById("carClass").value;
+
+            // Tarih seçilmemişse uyarı ver (Opsiyonel)
+            if(pickup === "" || dropoff === "") {
+                alert("Lütfen tarihleri seçiniz.");
+                return;
+            }
+
+            // Mesajı oluştur
+            var message = "Merhaba, müsaitlik sormak istiyorum.%0a" + 
+                          "📅 *Alış Tarihi:* " + pickup + "%0a" + 
+                          "📅 *İade Tarihi:* " + dropoff + "%0a" + 
+                          "🚗 *İstenen Sınıf:* " + carClass;
+
+            // WhatsApp'ı aç
+            var url = "https://wa.me/905318602363?text=" + message;
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
