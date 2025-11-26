@@ -75,14 +75,14 @@
         </div>
     </section>
 
-<section class="fleet" id="filo">
+    <section class="fleet" id="filo">
         <div class="container">
             <h2 class="section-title reveal">Araç <span>Filomuz</span></h2>
             <div class="car-grid">
                 
                 <div class="car-card reveal">
                     <div class="car-img">
-                        <img src="https://images.unsplash.com/photo-1649289683655-dbeb3377a5cd?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmlhdCUyMGVnZWF8ZW58MHx8MHx8fDA%3D" alt="Fiat Egea">
+                        <img src="https://images.unsplash.com/photo-1649289683655-dbeb3377a5cd?w=400&auto=format&fit=crop&q=60" alt="Fiat Egea">
                         <div class="car-badge">Ekonomik</div>
                     </div>
                     <div class="car-info">
@@ -146,7 +146,7 @@
 
                 <div class="car-card reveal">
                     <div class="car-img">
-                        <img src="https://images.unsplash.com/photo-1587142151322-54f87d1b7c12?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cG9sbyUyMHZ3fGVufDB8fDB8fHww" alt="VW Golf">
+                        <img src="https://images.unsplash.com/photo-1587142151322-54f87d1b7c12?w=400&auto=format&fit=crop&q=60" alt="VW Golf">
                         <div class="car-badge">Premium HB</div>
                     </div>
                     <div class="car-info">
@@ -162,7 +162,7 @@
 
                 <div class="car-card reveal">
                     <div class="car-img">
-                        <img src="https://images.unsplash.com/photo-1672052495056-2b55c254a776?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHBhc3NhdHxlbnwwfHwwfHx8MA%3D%3D" alt="Audi Passat">
+                        <img src="https://images.unsplash.com/photo-1672052495056-2b55c254a776?w=400&auto=format&fit=crop&q=60" alt="Audi Passat">
                         <div class="car-badge">VIP / Makam</div>
                     </div>
                     <div class="car-info">
@@ -185,7 +185,7 @@
             <div class="footer-wrapper">
                 
                 <div class="footer-left reveal">
-                    <h2>TUGEL <span>RENTAL</span></h2>
+                    <h2>TUGEL CAR <span>RENTAL</span></h2>
                     <p class="slogan">Şanlıurfa'nın güvenilir yol arkadaşı.</p>
                     
                     <ul class="contact-list">
@@ -213,7 +213,7 @@
 
                 <div class="footer-right reveal">
                     <iframe 
-                        src="https://maps.google.com/maps?q=Pa%C5%9Faba%C4%9F%C4%B1%20mahallesi%20%C5%9Eutim%203.%20sokak%20no%2020%20Haliliye%20%C5%9Eanl%C4%B1urfa&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                        src="https://maps.google.com/maps?q=Pa%C5%9Faba%C4%9F%C4%B1%2C%20%C5%9Eutim%203.%20Sokak%2C%20No%3A20%2C%20Haliliye%2C%20%C5%9Eanl%C4%B1urfa&t=&z=16&ie=UTF8&iwloc=&output=embed" 
                         width="100%" 
                         height="300" 
                         style="border:0; border-radius: 15px;" 
@@ -235,7 +235,7 @@
     </a>
 
     <script>
-        // 1. Scroll Animasyonu (Aşağı kaydırdıkça belirme)
+        // 1. Scroll Animasyonu
         window.addEventListener('scroll', reveal);
         function reveal(){
             var reveals = document.querySelectorAll('.reveal');
@@ -249,30 +249,25 @@
             }
         }
 
-        // 2. Tarih Seçip WhatsApp'a Atma Fonksiyonu
+        // 2. WhatsApp Fonksiyonu
         function searchCar() {
             var pickup = document.getElementById("pickupDate").value;
             var dropoff = document.getElementById("dropoffDate").value;
             var carClass = document.getElementById("carClass").value;
 
-            // Tarih kontrolü
             if(pickup === "" || dropoff === "") {
                 alert("Lütfen araç alış ve iade tarihlerini seçiniz.");
                 return;
             }
 
-            // Mesaj Şablonu
             var message = "Merhaba, müsaitlik sormak istiyorum.%0a" + 
                           "📅 *Alış Tarihi:* " + pickup + "%0a" + 
                           "📅 *İade Tarihi:* " + dropoff + "%0a" + 
                           "🚗 *İstenen Sınıf:* " + carClass;
 
-            // WhatsApp'ı aç
             var url = "https://wa.me/905318602363?text=" + message;
             window.open(url, '_blank');
         }
     </script>
 </body>
 </html>
-
-
